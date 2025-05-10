@@ -24,6 +24,7 @@
     }
     h1 {
         color: blue;
+        margin-left: 1rem;
     }
    
 
@@ -32,7 +33,7 @@
     }
     #menu-option {
         display: flex;
-
+        flex-direction: row;
         list-style: none;
         margin: 0;
         justify-content: center;
@@ -44,13 +45,7 @@
         
         
     }
-    #menu-option li {
-        
-        margin-left: 1rem;
-        
-        padding: 0;
-        
-    }
+   
     #menu-option a {
         text-decoration: none;
         color: white;
