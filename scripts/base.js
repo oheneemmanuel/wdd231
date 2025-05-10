@@ -23,7 +23,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
             technology: [
                 'Python'
             ],
-            completed: false
+            completed: true
         },
         {
             subject: 'WDD',
@@ -36,7 +36,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
                 'HTML',
                 'CSS'
             ],
-            completed: false
+            completed: true
         },
         {
             subject: 'CSE',
@@ -48,7 +48,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
             technology: [
                 'Python'
             ],
-            completed: false
+            completed: true
         },
         {
             subject: 'CSE',
@@ -60,7 +60,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
             technology: [
                 'C#'
             ],
-            completed: false
+            completed: true
         },
         {
             subject: 'WDD',
@@ -74,7 +74,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
                 'CSS',
                 'JavaScript'
             ],
-            completed: false
+            completed: true
         },
         {
             subject: 'WDD',
@@ -90,7 +90,39 @@ window.addEventListener('DOMContentLoaded', (event) => {
             ],
             completed: false
         }
-    ]
-});
+    ];
+    document.getElementById('All-course').addEventListener('click', () => filterCourses('All'));
+    document.getElementById('Wdd-course').addEventListener('click', () => filterCourses('WDD'));
+    document.getElementById('Cse-course').addEventListener('click', () => filterCourses('CSE'));
+    
+    function filterCourses(subject) {
+        let filteredCourses;
+        if (subject === 'All') {
+            filteredCourses = courses;
+        } else {
+            filteredCourses = courses.filter(course => course.subject === subject);
+        }
+        
+
+        const courseList = document.getElementById('Course-container');
+        courseList.innerHTML = ''; // Clear previous content
+        const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
+        document.getElementById('totalCredits').textContent = `The total number of credits is ${totalCredits}`;
+
+        
+        filteredCourses.forEach(course => {
+            const courseItem = document.createElement('div');
+            courseItem.classList.add('course-item');
+            courseItem.innerHTML = `
+                <h3>${course.subject} ${course.number}</h3>
+                
+            `;
+            courseList.appendChild(courseItem);
+        });
+    }
+      
+      
+    
+})
 
 
