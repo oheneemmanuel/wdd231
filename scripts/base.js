@@ -102,6 +102,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         } else {
             filteredCourses = courses.filter(course => course.subject === subject);
         }
+       
         
 
         const courseList = document.getElementById('Course-container');
@@ -112,14 +113,25 @@ window.addEventListener('DOMContentLoaded', (event) => {
         
         filteredCourses.forEach(course => {
             const courseItem = document.createElement('div');
+            const completedcheckbox = document.createElement('span');
+            completedcheckbox.textContent = course.completed ? '✅' : '❌';
+            completedcheckbox.checked = course.completed;
+            completedcheckbox.disabled = true;
             courseItem.classList.add('course-item');
             courseItem.innerHTML = `
                 <h3>${course.subject} ${course.number}</h3>
                 
             `;
+            
+            
+            courseItem.appendChild(completedcheckbox);
             courseList.appendChild(courseItem);
+
+
         });
+        
     }
+
       
       
     
