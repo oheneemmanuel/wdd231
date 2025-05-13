@@ -1,0 +1,25 @@
+{
+    "family_name": "Kwakye",
+    "move_in_date": "2024-06-23",
+    "number_of_peole": "3",
+    "visited_by_bishopric": "true",
+    "family_members": [
+        {
+            "name": "Ohene Kwakye",
+            "gender": "male",
+            "birth_date": "2004-05-24"
+
+        },
+        {
+            "name": "Jennifer Kwakye",
+            "gender": "female",
+            "birth_date": "1996-05-23"
+        },
+        {
+            
+            "name": "Eunica Kwakye",
+            "gender": "female",
+            "birth_date": "1998-12-22"
+        }
+    ]
+}
