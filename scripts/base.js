@@ -106,7 +106,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
         
 
         const courseList = document.getElementById('Course-container');
-        courseList.innerHTML = ''; // Clear previous content
+        courseList.innerHTML = ""; // Clear previous content
         const totalCredits = filteredCourses.reduce((sum, course) => sum + course.credits, 0);
         document.getElementById('totalCredits').textContent = `The total number of credits is ${totalCredits}`;
 
