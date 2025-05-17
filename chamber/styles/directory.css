@@ -24,7 +24,7 @@ header {
     grid-template-columns: 44px auto 44px;
     align-items: end;
     border: 1px solid var(--primary-color);
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
     color: white;
     margin-bottom: 1rem;
     width: 100%;
@@ -59,7 +59,7 @@ header {
     list-style: none;
 }
 li.active-item a {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.5);
 
 }
 
@@ -85,63 +85,121 @@ nav.show {
 }
 .userview {
     text-align: center;
+    display: block;
+    gap: 1rem;
+}
+#grid, #list {
+    cursor: pointer;
+    gap: 1rem;
+    color: var(--primary-color);
 }
 #card section {
     display: grid;
     grid-template-columns: 1fr;
+    justify-content: center;
+    border: 1px solid var(--primary-color);
+    gap: 1rem;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-top: 1rem;
+    background-color: #eee;
     
 }
+#card section img {
+    width: auto;
+    max-width: 325px;
+    height: 200px;
+    box-shadow: 0 0 30px #777;
+    border: 1px solid #eee;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#card section h2 {
+    font-size: 1.5rem;
+    color: black;
+    font-weight: bold;
+    ;
+}
+#card section p {
+    font-size: 1rem;
+    color: black;
+}
+#card section a {
+    font-size: 1rem;
+    color: navy;
+}
+#card section a:hover {
+    color: red;
+}
 
-.list {
+
+
+#card.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 10px;
+
+}
+#card.grid section {
+    border: 1px groove black;
+    border-style: outset;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 1rem;
+    background-color: #eee;
+}
+#card.grid section a {
+    font-size: 1rem;
+    color: var(--primary-color);
+    padding: 0;
+}
+#card.grid section a:hover {
+    color: red;
+}
+#card.grid section img {
+    width: auto;
+    height: 75px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#card.list {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    justify-content: center;
+    margin-top: 1rem;
+    
+    
 }
-.list section {
+#card.list section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 0;
     gap: 1rem;
     padding: 0.25rem;
+    background-color: #eee;
 }
-.list section img {
+#card.list section img {
     display: none;
 }
-.list section > html, body {
-    margin: 0.1rem;
-} 
-.list section h2 {
+
+#card.list section h2 {
     font-size: 1rem;
 } 
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 10px;
-    
-}
-.grid section {
-    border: 2px solid black;
-    border-style: outset;
-    border-radius: 10px;
-    text-align: center;
-    margin-top: 1rem;
-    
-}
-.grid section a {
-    font-size: 0.85rem;
+#card.list section a {
+    font-size: 1rem;
     color: navy;
-}
-.grid section img {
-    width: auto;
-    height: 75px;
-    border-radius: 10px
+    
 }
 
 
 footer {
     
-    background-color: var(--secondary-color);   
+    background-color: var(--primary-color);   
     color: white;
     padding: 1rem;
     height: 7rem;

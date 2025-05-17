@@ -18,7 +18,7 @@
     }
     #menu-option  {
         position: absolute;
-        top: 1rem;
+        top: 0.5rem;
         right: 2rem;
         
         
@@ -78,6 +78,8 @@
         color: red;
         
     }
+    
+    
 
     
     .grid {
@@ -94,16 +96,28 @@
         margin-top: 1rem;
     
     }
-
-    
-    .list {
-    display: grid;
+    #card.list {
+    display: flex;
     flex-direction: column;
     gap: 10px;
     }
-    .list section img {
-        display: none;
+    #card.list section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        margin: 0;
+        gap: 1rem ;
+        padding: 0.25rem;
     }
+    #card.list section img {
+        display: none ;
+    }
+
+    #card.list section h2 {
+        font-size: 1rem;
+    } 
+
+    
+   
    
     
 
