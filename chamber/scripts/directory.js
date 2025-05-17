@@ -39,8 +39,10 @@ window.addEventListener('DOMContentLoaded', (event) => {
             let name = document.createElement('h2');
             let address = document.createElement('p');
             let phone = document.createElement('p');
+            let level = document.createElement('p');
             let website = document.createElement('a');
             let logo = document.createElement('img');
+            
             // setting the attribute of the image
             logo.setAttribute('src', company.image);
             logo.setAttribute('alt', `logo of ${company.name}`);
@@ -52,13 +54,16 @@ window.addEventListener('DOMContentLoaded', (event) => {
             name.textContent = company.name;
             address.textContent = company.address;
             phone.textContent = company.phone;
-            website.textContent = company.website;
+            website.textContent =company.website;
+            level.textContent = `Membership-level : ${company.membership_level}`;
             //Adding the elements to the card created 
             card.appendChild(name);
             card.appendChild(logo);
             card.appendChild(address)
             card.appendChild(phone)
+            card.appendChild(level)
             card.appendChild(website)
+
 
             // adding the card to the cards which got the element by id #cards
             cards.appendChild(card);

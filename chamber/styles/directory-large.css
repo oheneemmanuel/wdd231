@@ -82,7 +82,7 @@
     
 
     
-    .grid {
+    #card.grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 10px;
@@ -115,6 +115,9 @@
     #card.list section h2 {
         font-size: 1rem;
     } 
+    #card.list section :nth-child(6) {
+        grid-column: 1 / -1 ;
+    }
 
     
    
