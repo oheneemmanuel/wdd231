@@ -4,8 +4,28 @@
         display: none;
     }
     header {
+        display: flex;
+        grid-template-columns: 150px 1fr;
+        align-items: center;
         position: relative;
         opacity: 0.8;
+    }
+    .site-name {
+        display: flex;  
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 1rem;
+        text-align: left;
+        margin: 0;
+        
+    }
+    .site-name p {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        
+        
+    
+        
     }
     
     
@@ -18,7 +38,7 @@
     }
     #menu-option  {
         position: absolute;
-        top: 0.5rem;
+        top: 2.5rem;
         right: 2rem;
         
         
@@ -117,6 +137,15 @@
     } 
     #card.list section :nth-child(6) {
         grid-column: 1 / -1 ;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
     }
 
     
