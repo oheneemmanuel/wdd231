@@ -33,7 +33,7 @@ header {
     
 }  
 header img {
-    margin-left: 3rem;
+    margin-left: 2.3rem;
     box-shadow: 0 0 30px #777;
     margin-bottom: 0.5rem;
 }
@@ -117,14 +117,14 @@ nav.show {
     text-align: center;
     display: block;
     gap: 1rem;
-    
+    margin-bottom: 1rem;
 }
 #grid, #list {
     cursor: pointer;
     gap: 1rem;
     color: var(--primary-color);
     border: none;
-    border-radius: 1px solid black;
+    
     padding: 1rem;
 }
 #card section {
