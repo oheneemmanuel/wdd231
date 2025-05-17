@@ -8,17 +8,55 @@
     <meta name="author" content="Ohene Emmanuel Kwakye">
     <meta property="og:title" content="A Directory Page">
     <meta property="og:description" content="A first page for a chamber site that provides information about the site and help clients to easily navigate the site">
-    <meta property="og:image" content="https://example.com/image.jpg">
+    <meta property="og:image" content="https://github.com/oheneemmanuel/wdd231/blob/main/chamber/images/logo1.jpg?raw=true">
     <meta property="og:url" content="https://oheneemmanuel.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="A Directory Page">
+    <meta property="og:locale" content="en_US">
     <link rel="icon" href="icon1.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/directory-large.css">
+    <script src="scripts/directory.js" defer></script>
 </head>
 <body>
     <header>
-        <img src="images/logo1.jpg" alt="A logo of the site">
-        <span>All is well</span>
-        
+        <img src="images/logo1.jpg" alt="A logo of the site" width="45" height="50">
+        <span>All is Well</span>
+    
+
+       <button id="menu"></button>
+   
 
     </header>
+   
+    <nav id="animate-me">
+        <ul id="menu-option">
+            <li><a href="#">Home</a></li>
+            <li class="active-item"><a href="#">Discovery</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Discover</a></li>
+        </ul>
+            
+    </nav>
+    <div class="userview">
+        <button id="grid">⏹️ Grid</button>
+		<button id="list">📄 List</button>
+
+    </div>
+   
+    <main>
+        
+        
+        <div id="card"></div>
+            
+        
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> Ohene Emmanuel Kwakye, Ghana All rights reserved.</p>
+        <p id="LastModified"></p>
+    </footer>
+        
     
 </body>
 </html>

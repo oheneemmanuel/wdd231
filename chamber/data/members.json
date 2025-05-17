@@ -1,0 +1,69 @@
+{
+    "companies": [
+        
+
+        {
+            "name": "Goil Company Limited",
+            "address": "Adjaben Road, Accra, Greater Accra",
+            "phone": "+233 30 268 8215",
+            "website": "https://goil.com.gh/",
+            "image": "./images/GOIL.jpg",
+            "membership_level": 3,
+            "description": "A responsive energy company, GOIL PLC (GOIL) is committed to providing our customers with safe and environmentally friendly."
+        },
+        {
+            "name": "Newmont Gold Ghana Limited",
+            "address": "c825/26 Lagos Avenue, East Legon, Accra",
+            "phone": "030 701 1853",
+            "website": "https://www.newmont.com/",
+            "image": "./images/newmont.jpeg",
+            "membership_level": 2,
+            "description": "A company leading gold producer."
+        },
+        {
+            "name": "Dangote Industries Limited",
+            "address": "Union Marble House, 1 Alfed Rewane Road, Lagos, Nigeria",
+            "phone": "+234 1 448 0815",
+            "website": "https://www.dangote.com/cement/",
+            "image": "./images/Dabgote.jpeg",
+            "membership_level": 3,
+            "description": "The company, through its subsidiaries, offers building products such is cements and also provide food and beverages ."
+        },
+        {
+            "name": "Many Thanks Hardware",
+            "address": "Area 2, Sunyani, Ghana",
+            "phone": "+233 24 504 8736",
+            "website": "https://oheneemmanuel.github.io/wdd131/project/index.html",
+            "image": "./images/manythanks.jpg",
+            "membership_level": 1,
+            "description": "A trusted grocery store offering fresh and organic products."
+        },
+        {
+            "name": "MTN Ghana ",
+            "address": "Plot OER 6, Independence Avenue west Ridge, Accra, Ghana",
+            "phone": "+233 24 430 0000",
+            "website": "https://mtn.com.gh/",
+            "image": "./images/mtn.jpg",
+            "membership_level": 2,
+            "description": "A public limited liabilty company that provides mobile telecommunication."
+        },
+        {
+            "name": "Deluxy Paint",
+            "address": "P.O Box 32, Kumasi",
+            "phone": "+233-302-221437",
+            "website": "https://de-luxy.com/",
+            "image": "./images/deluxy.jpeg",
+            "membership_level": 3,
+            "description": "A paint company that provide different types of paint."
+        },
+        {
+            "name": "Voltic Ghana",
+            "address": "1st Blohym Road, Accra, Ghana",
+            "phone": "+233 30 276 5023",
+            "website": "https://volticghana.com",
+            "image": "./images/voltic.jpeg",
+            "membership_level": 1,
+            "description": "Focuses on the production and distribution of quality natural mineral water."
+        }
+    ]
+}   

@@ -3,8 +3,9 @@ const url = "https://byui-cse.github.io/cse-ww-program/data/latter-day-prophets.
 const cards = document.querySelector('#cards');
 const displayProphets = (prophets) => {
     prophets.forEach((prophet) => {
-        // creating the elements
+        // creating a section element to hold the prophets
         let card = document.createElement('section');
+        // creating elements to hold the prophets
         let fullName = document.createElement('h2');
         let portrait = document.createElement('img');
         let birthDate = document.createElement('p');
