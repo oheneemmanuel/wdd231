@@ -45,7 +45,7 @@ async function getWeatherInfo() {
 
             foreCastContainer.innerHTML += `
                 <div>
-                    <h3>${dayName} : </h3>
+                    <h4>${dayName} : </h4>
                     <p>${temp}°C</p>
                     <p><strong>Weather:</strong> ${description}</p>
                     <hr>
