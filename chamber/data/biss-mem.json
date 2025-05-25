@@ -1,0 +1,35 @@
+{
+    "companies": [
+        
+
+        {
+            "name": "Goil Company Limited",
+            "address": "Adjaben Road, Accra, GH",
+            "phone": "+233 30 268 8215",
+            "website": "https://goil.com.gh/",
+            "image": "./images/GOIL.jpg",
+            "membership_level": 3,
+            "description": "A responsive energy company, GOIL PLC (GOIL) is committed to providing our customers with safe and environmentally friendly."
+        },
+        
+        {
+            "name": "MTN Ghana ",
+            "address": "Ridge, Accra, GH",
+            "phone": "+233 24 430 0000",
+            "website": "https://mtn.com.gh/",
+            "image": "./images/mtn.jpg",
+            "membership_level": 2,
+            "description": "A public limited liabilty company that provides mobile telecommunication."
+        },
+       
+        {
+            "name": "Voltic Ghana",
+            "address": "1st Blohym Road, Accra, GH",
+            "phone": "+233 30 276 5023",
+            "website": "https://volticghana.com",
+            "image": "./images/voltic.jpeg",
+            "membership_level": 1,
+            "description": "Focuses on the production and distribution of quality natural mineral water."
+        }
+    ]
+}   

@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chamber of Commerce - Sunyani, penkewasi Directory</title>
-    <meta name="description" content="A Directory Page for a chamber site to build and connect poeple">
+    <title>Chamber of Commerce - Sunyani, Homepage</title>
+    <meta name="description" content="A Home Page for a chamber site to build and connect poeple">
     <meta name="author" content="Ohene Emmanuel Kwakye">
     <meta property="og:title" content="chamber of commerce">
     <meta property="og:description" content="A first page for a chamber site that provides information about the site and help clients to easily navigate the site.">
     <meta property="og:image" content="https://oheneemmanuel.github.io/wdd231/chamber/images/logo1.jpg">
-    <meta property="og:url" content="https://oheneemmanuel.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://oheneemmanuel.github.io/wdd231/chamber/index.html">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Chamber of Commerce">
     <meta property="og:locale" content="en_US">
@@ -21,6 +21,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth@0,99.7;1,99.7&display=swap" rel="stylesheet">
     <script src="scripts/home.js" defer></script>
+    <script src="scripts/forecast.js" defer></script>  
+    <script src="scripts/biss-cards.js" defer></script>
 </head>
 <body>
     <header>
@@ -57,27 +59,58 @@
     <main>
         
         <div class="hero">
-            <img src="images/banner3.jpg" alt="A hero image of the site" width="100%" height="100%">
+            <img src="images/banner3.png" alt="A hero image of the site" width="100%" height="100%">
             <div class="hero-text">
-                <h2>Welcome to the Chamber of Commerce</h2>
+                <p>
+                    <b>Sunyani Chamber of Commerce</b>
+                </p>
+                <p>Connect. Grow. Thrive</p>
+                <p>Join the chamber and become a part of our thriving business community</p>
                 <p>Connecting businesses and communities in Sunyani, Bono East Region.</p>
+                <a href="join.html">Join!</a>
         </div>
         
         <h1>Home</h1>
         
-        <div class="container">
+        <section class="container">
             <section id="Events">
-                <h2>Events</h2>   
+                <h2>Events</h2>  
+                <h3>January</h3> 
+                <p><li></li></p>
+                <p><li></li></p>
+                <h3>June</h3>
+                <p><li></li></p>
+                <p><li></li></p>
+                <h3>September</h3>
+                <p><li></li></p>
+                <p><li></li></p>
+            
             </section>
             
             <section id="current-weather">
                 <h2>Current Weather</h2>
+                <p id="town"></p>
+                <p>Current Temp : <span id="current-temp"></span></p>
+                <p>Humidity : <span id="humidity"></span></p>
+                <p>High : <span id="high-temp"></span></p>
+                <p>Low : <span id="low-temp"></span></p>
+                <p>Sunsrise : <span id="sunrise"></span></p>
+                <p>Sunset : <span id="sunset"></span></p>
+                <figure id="weat">
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+
             </section>
-            <section id="Weather Forecast">
+            <section id="weather-forecast">
                 <h2>Weather Forecast</h2>
+                    <div id="today"></div>
+                   
             </section>
             
-        </div>
+        </section>
+
+        <div id="card"></div>
 
             
         

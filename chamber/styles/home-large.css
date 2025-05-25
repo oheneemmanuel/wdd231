@@ -9,6 +9,7 @@
         align-items: center;
         position: relative;
         opacity: 0.8;
+        
     }
     .site-name {
         display: flex;  
@@ -63,25 +64,60 @@
     }
     .hero {
         margin: 0;
+        position: relative;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 0;
+        padding-bottom: 0;
+        
         
     }
-    .hero img {
-        position: relative;
-        background: rgba(0, 0, 0, 0.959);
-    }
+    
+    
     .hero-text {
         position: absolute;
-        top: 20rem;
+        top: 9rem;
         color: var(--accent-color);
+        border: 1px groove #eee;
+        background: #333;
+        text-align: center;
+        right: 1rem;
+        
+        width: auto;
+        
+    
     }
+    .hero-text b {
+        font-size: 4rem;
+        font-family: cursive;
+    }
+    .hero-text p {
+        font-size: 1rem;
+    }
+    .hero a {
+        color: white;
+        text-decoration: none;
+        border: 1px groove black;
+        padding: 1rem;
+        margin: 0;
+        
+    }
+  
+    
     .container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1rem;
+        color: white;
+        background-color: white;
+        
+        
     }
     .container section {
         border: 1px solid black;
-        background-color: #333;
+        background-color: white;
+        color: black;
+        border-radius: 10px;
     }
     .container section h2 {
         text-align: center;
@@ -89,6 +125,50 @@
         background-color: navy;
         margin: 0;
     }
+    
+ 
+    #weather-icon {
+        width: 80px;
+        height: auto;
+        margin-top: 10px;
+    }
+    figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+    figcaption {
+        text-transform: capitalize;
+        font-style: italic;
+        font-size: 1rem;
+        color: #333;
+    }
+   
+    
+
+
+
+    #card {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
+    #card section {
+        gap: 1rem;
+        margin-top: 2rem;
+        
+    }
+    #card section img {
+        
+        max-width: 290px;
+        height: 100px;
+        float: left;
+       
+
+    }
+  
+   
 
     footer {
         display: flex;
@@ -97,6 +177,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 1rem;
+        
 
     }
 
