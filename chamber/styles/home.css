@@ -130,12 +130,15 @@ h1 {
     background-position: center;
     margin-bottom: 0;
     padding-bottom: 0;
+
     
-    
+}
+.hero {
+    width: 100%;
 }
 .hero-text {
     position: absolute;
-    top: 5%;
+    top: 20%;
     left: 50%;
     
     transform: translate(-50%, -50%);
@@ -257,8 +260,8 @@ figcaption {
     gap: 1rem;
 }
 #card section {
-        
-    
+    text-align: center;
+    display: block;
     border: 1px solid black;
     gap: 1rem;
     margin-top: 2rem;
@@ -288,6 +291,7 @@ figcaption {
     border: none;
     color: black;
     font-size: 1rem;
+    
 }
 #card section a:hover {
     color: red;
