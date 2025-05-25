@@ -118,6 +118,12 @@ nav.show {
     
     
 }
+h1 {
+    margin-top: 4rem;
+    text-align: left;
+    margin-left: 2rem;
+
+}
 .hero {
     position: relative;
     background-size: cover;
@@ -125,16 +131,23 @@ nav.show {
     margin-bottom: 0;
     padding-bottom: 0;
     
+    
 }
 .hero-text {
     position: absolute;
-    top: 5rem;
+    top: 5%;
+    left: 50%;
+    
+    transform: translate(-50%, -50%);
     color: var(--accent-color);
     border: 1px groove #eee;
     background: #333;
     text-align: center;
-    
-    width: 100%;
+    z-index: 1;
+    width: 50%;
+    max-width: 600px;
+    padding: 0;
+    height: auto;
 
 }
 .hero-text b {
@@ -142,7 +155,7 @@ nav.show {
       font-family: cursive;
 }
 .hero-text p {
-    font-size: .5rem;
+    font-size: 0.8rem;
 }
 .hero a {
     display: block;
@@ -195,7 +208,7 @@ nav.show {
     text-align: center;
 }
 #town {
-    font-size: larger;
+    font-size: 2rem;
     font-family: cursive;
     font-weight: bold;
 }
@@ -232,10 +245,11 @@ figcaption {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 4px;
+    gap: 3px;
 }
 #today h4 {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    gap: 1rem;
 }
 #card {
     display: grid;
@@ -254,8 +268,8 @@ figcaption {
 #card section img {
     display: block;
     width: auto;
-    max-width: 200px;
-    height: 100px;
+    max-width: 150px;
+    height: 80px;
     float: left;
     margin-left: 1rem;
     margin-right: 1rem;
@@ -273,6 +287,7 @@ figcaption {
     background-color: #EDE4E5;
     border: none;
     color: black;
+    font-size: 1rem;
 }
 #card section a:hover {
     color: red;

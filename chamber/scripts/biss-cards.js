@@ -25,7 +25,7 @@ const displayCompany = (companies) => {
         name.textContent = company.name;
         address.innerHTML = `<strong>Location :</strong> ${company.address}`;
         phone.innerHTML = `<strong>Phone :</strong> ${company.phone}`;
-        website.innerHTML =`<strong>Website :  </strong>${company.website}`;
+        website.innerHTML =`<strong>Website :</strong> ${company.website}`;
         level.innerHTML= `<strong>Membership-level :  </strong> ${company.membership_level}`;
         //Adding the elements to the card created 
         card.appendChild(name);

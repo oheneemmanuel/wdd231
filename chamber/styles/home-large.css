@@ -76,14 +76,12 @@
     
     .hero-text {
         position: absolute;
-        top: 9rem;
-        color: var(--accent-color);
-        border: 1px groove #eee;
-        background: #333;
-        text-align: center;
-        right: 1rem;
+        top: 5rem;
         
-        width: auto;
+        width: 100%;
+        transform: translateX(-70%);
+        max-width: 800px;
+        padding: 1rem;
         
     
     }
@@ -161,7 +159,7 @@
     }
     #card section img {
         
-        max-width: 290px;
+        max-width: 320px;
         height: 100px;
         float: left;
        
