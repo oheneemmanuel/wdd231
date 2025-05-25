@@ -139,7 +139,7 @@ h1 {
 }
 .hero-text {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     
     transform: translate(-50%, -50%);
@@ -148,7 +148,7 @@ h1 {
     background: #333;
     text-align: center;
     z-index: 1;
-    width: 80%;
+    width: 48%;
     max-width: 600px;
     padding: 0;
     height: auto;
@@ -199,12 +199,14 @@ h1 {
     color: white;
     margin: 0;
 }
-#Events h3 {
+#act  {
     text-align: center;
     display: block;
     width: 100%;
     border-bottom: 2px solid black;
     padding-bottom: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 #current-weather {
