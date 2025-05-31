@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce - Sunyani, Join Page</title>
+    <meta name="description" content="A Home Page for a chamber site to build and connect poeple">
+    <meta name="author" content="Ohene Emmanuel Kwakye">
+    <meta property="og:title" content="chamber of commerce">
+    <meta property="og:description" content="A join Page that allow people to join the chamber of commerce to become memebers and connect with people in the chamber.">
+    <meta property="og:image" content="https://oheneemmanuel.github.io/wdd231/chamber/images/logo1.jpg">
+    <meta property="og:url" content="https://oheneemmanuel.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Chamber of Commerce">
+    <meta property="og:locale" content="en_US">
+    <link rel="icon" href="icon1.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/join-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth@0,99.7;1,99.7&display=swap" rel="stylesheet">
+    <script src="scripts/join.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <img src="images/logo1.jpg" alt="A logo of the site" width="120" height="120">
+        <div class="site-name">
+            
+            <p>
+                <b>Sunyani</b>
+            </p>
+            <p>Chamber of Commerce</p>
+        </div>
+      
+        <button id="menu"></button>
+   </header>
+   
+    <nav id="animate-me">
+        <ul id="menu-option">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li class="active-item"><a href="join.html">Join</a></li>
+            <li><a href="#">Discover</a></li>
+        </ul>
+            
+    </nav>
+    <main>
+        <section class="form-member">
+            <form method="get" action="thanks.html">
+                <label for="first-name">First Name:</label>
+                <input type="text" name="first-name" title="Enter your first name" autocomplete="given-name" required>
+
+                <label for="last-name">Last Name:</label>
+                <input type="text" name="last-name" title="Enter your last name" autocomplete="given-name" required>
+
+                <label for="org-title">Organizational Title</label>
+                <input type="text" name="org-title" title="Applicant's Organization title " autocomplete="organization-title" pattern="^[a-zA-Z\s\-]{7,}$"><br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" name="email" title="Applicant's-Email" required autocapitalize="email" placeholder="example@gmail.com"><br>
+
+                <label for="phone">Mobile Phone No: </label>
+                <input type="tel"  name="tel" title="Mobile Phone number" required autocomplete="tel"><br>
+
+                <label for="organization-name">Business Name:</label>
+                <input type="text" name="organization-name" title="organization-Name" required autocomplete="organization"><br>
+
+                <label for="membership-level">Membership-level:</label>
+                <select name="membership-level" title="Membership Level">
+                    <option value="none">None</option>
+                    <option value="np">NP Membership(No fee)</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select><br>
+
+                <label for="description">Business Description: </label>
+                <textarea name="organization_description" title="organization description"></textarea><br>
+
+                <input type="hidden" name="timestamp" id="timestamp">
+                <input type="submit" value="Join Chamber">
+
+            </form>
+            
+            <h2>Membership Levels</h2>
+
+            <section class="membership-cards">
+                <div class="card">
+                    <h3>Non-Profit Membership</h3>
+                    <button class="openModal">Learn More</button>
+                    <dialog class="box"></dialog>
+
+
+                </div>
+                <div class="card">
+                    <h3>Bronze Membership Level</h3>
+                    <button class="openModal">Learn More</button>
+                    <dialog class="box"></dialog>
+                </div>
+                <div class="card">
+                    <h3>Silver Membership Level</h3>
+                    <button class="openModal">Learn More</button>
+                    <dialog class="box"></dialog>
+                </div>
+
+                <div class="card">
+                    <h3>Gold Membership Level</h3>
+                    <button class="openModal">Learn More</button>
+                    <dialog class="box"></dialog>
+                </div>
+            </section>
+
+        </section>
+    
+        
+
+    </main>
+
+    <footer>
+        <div>
+            <p>
+                <b>Sunyani Chamber of Commerce</b>
+            </p>
+            <p>Bono East Penkwasi</p>
+            <p>penkwasi, Sunyani, p/y 24 </p>
+            <p>ohenekwakye24@gmail.com</p>
+            <p>+233 544 20 4625</p>
+
+        </div>
+        <div>
+            
+            <a href="https://www.facebook.com/"><img src="images/facebook-icon.png" alt="Facebook" width="30" height="30"></a>
+            <a href="https://twitter.com/"><img src="images/twitter-icon.png" alt="Twitter" width="30" height="30"></a>
+            <a href="https://www.instagram.com/"><img src="images/istagram-icon.png" alt="instagram-icon.png" width="30" height="30"></a>
+        </div>
+        <div>
+            <p>WDD231 class Project</p>
+            <p>Ohene Kwakye Emmanuel</p>
+        
+            <p>&copy;<span id="currentyear"></span> Ohene Emmanuel Kwakye, Ghana All rights reserved.</p>
+            <p id="LastModified"></p>
+        </div>
+    </footer>
+        
+    
+</body>
+</html>
