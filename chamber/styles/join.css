@@ -233,12 +233,12 @@ dialog {
 }
 dialog button {
     position: absolute;
-    top: 20px;
+    top: 8px;
     right: 10px;
-    padding: .5rem 1rem;
+    padding: .1rem .1rem;
     border: 1px solid rgb(0 0 0 / 10%);
     cursor: pointer;
-    width: 44px;
+    width: 30px;
     height: auto;
     
 }
