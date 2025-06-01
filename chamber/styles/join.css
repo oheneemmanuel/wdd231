@@ -120,7 +120,21 @@ label {
     
 input[type=text],
 input[type=tel],
-input[type=email]
+input[type=email] {
+    display: block;
+    margin: .2rem;
+    padding: 1rem;
+    border: 1px solid #999;
+    border-radius: 5px;
+    border-left-width: 7px;
+    border-left-color: #555;
+    font-size: 1.2rem;
+    color: black;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.22);
+}
+    
+
 
 select {
     display: block;
