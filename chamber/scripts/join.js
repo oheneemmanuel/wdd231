@@ -65,6 +65,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
        
 
     ];
+    
     //select all the open modal to open the modal when the learn more is clicked
     document.querySelector('form').addEventListener('submit', (event) => {
         document.getElementById("timestamp").value = new Date().toISOString();
@@ -72,12 +73,14 @@ window.addEventListener('DOMContentLoaded', (event) => {
     document.querySelectorAll(".openModal").forEach((button, index) => {
         button.addEventListener("click", () => {
             const modal = document.querySelectorAll(".box")[index];
+            // coverts the benefits to li element
+           
             // this is for when the modal is display the inner content of it 
             modal.innerHTML =  `
                 <h3>${business[index].name}</h3>
                 <p>Become a member of this level and experience the best and enjoy all the benefits</p>
                 <p><strong>Price</strong> : $${business[index].price}</p>
-                <p><strong>Benefits :</strong> ${business[index].benefits}</p>
+                <ul><strong>Benefits :</strong> ${business[index].benefits} </ul>
                 <button class="closeModal">❌</button>
             `;
             modal.showModal();
