@@ -66,6 +66,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
 
     ];
     //select all the open modal to open the modal when the learn more is clicked
+    document.querySelector('form').addEventListener('submit', (event) => {
+        document.getElementById("timestamp").value = new Date().toISOString();
+    });
     document.querySelectorAll(".openModal").forEach((button, index) => {
         button.addEventListener("click", () => {
             const modal = document.querySelectorAll(".box")[index];

@@ -3,6 +3,7 @@
     --primary-color: #002366;
     --secondary-color: #808080;
     --accent-color: #ffa500;
+    --text-style: cursive;
 }
 
 html, body {
@@ -105,8 +106,11 @@ nav.show {
     margin-top: 0;    
 }
 form {
-    margin: 1rem 2%;
-
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px groove black;
+    border-radius: 1rem;
+    background-color: rgba(38, 0, 229, 0.152);
     label {
         display: block;
         font-size: 1rem;
@@ -120,58 +124,89 @@ form {
     select {
         display: block;
         margin: .2rem;
-        padding: .3rem;
+        padding: 1rem;
         border: 1px solid #999;
         border-radius: 5px;
         border-left-width: 7px;
         border-left-color: #555;
-        font-size: 1rem;
-        color: navy;
+        font-size: 1.2rem;
+        color: black;
         width: 250px;
+        background-color: rgba(0, 0, 0, 0.22);
     }   
     input:required {border-left-color: #d70000;}
     input:required:valid {border-left-color: green;}
 
     input[type=submit] {
-        border: none;
-        text-align: center;
+        border: 1px solid black;
+        
         background-color: #3d405b;
         color: white;
         border-radius: 1rem;
         padding: .75rem 1.5rem;
-        margin: 2rem 0;
+        margin-top: 1rem;
         font-size: 1.2rem;
         cursor: pointer;
         appearance: none;
+        width: 100%;
+        
+        
     }   
     input[type="submit"]:hover {
         background-color: #007bff;
         transition: 0.3s ease-in-out;
     } 
+    textarea {
+        width: 100%;
+        height: 5rem;
+    }
+    h2 {
+        border-bottom: 1px solid black;
+        font-size: 1.5rem;
+        font-family: monospace;
+
+    }
     
 
 }
-h2 {
-    border-bottom: 1px solid black;
+
+h1 {
     text-align: center;
+    color: var(--primary-color);
+    font-family: var(--text-style);
+    font-weight: 5rem;
+}
+.membership-cards h2 {
+    border-bottom: 1px solid rgb(40, 14, 14);
+    font-size: 1.5rem;
+    font-family: monospace;
+    margin-left: 1rem;
     
+    
+}
+.form-cards {
+    display: flex;
+    flex-direction: column;
     
 }
 
 .membership-cards {
     display: flex;
     flex-direction: column;
-    margin: 0;
-    gap: 20px;
-
+    border: 1px groove black;
+    border-radius: 1rem;
+    background-color: rgba(38, 0, 229, 0.152);
+    
 
 }
 .card {
     text-align: center;
     border: 1px groove #999;
     margin-top: .5rem;
+    margin-bottom: .5rem;
     padding: 15px;
-    width: 100%;
+    margin-left: 1rem;
+    margin-right: 1rem;
     border-top-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     background-color: #999;

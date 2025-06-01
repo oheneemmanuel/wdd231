@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chamber of Commerce - Sunyani, Join Page</title>
-    <meta name="description" content="A Home Page for a chamber site to build and connect poeple">
+    <meta name="description" content="A join Page for a chamber site that request a form to be submitted  and connect business together">
     <meta name="author" content="Ohene Emmanuel Kwakye">
     <meta property="og:title" content="chamber of commerce">
     <meta property="og:description" content="A join Page that allow people to join the chamber of commerce to become memebers and connect with people in the chamber.">
@@ -46,9 +46,12 @@
         </ul>
             
     </nav>
+    <h1>Join Us Today!</h1>
     <main>
         <section class="form-member">
-            <form method="get" action="thanks.html">
+            
+            <form method="get" action="thankyou.html">
+                <h2>Membership Application Form</h2>
                 <label for="first-name">First Name:</label>
                 <input type="text" name="first-name" title="Enter your first name" autocomplete="given-name" required>
 
@@ -56,7 +59,7 @@
                 <input type="text" name="last-name" title="Enter your last name" autocomplete="given-name" required>
 
                 <label for="org-title">Organizational Title</label>
-                <input type="text" name="org-title" title="Applicant's Organization title " autocomplete="organization-title" pattern="^[a-zA-Z\s\-]{7,}$"><br>
+                <input type="text" name="org-title" title="Applicant's Organization title " autocomplete="organization-title"><br>
 
                 <label for="email">Email Address:</label>
                 <input type="email" name="email" title="Applicant's-Email" required autocapitalize="email" placeholder="example@gmail.com"><br>
@@ -69,11 +72,11 @@
 
                 <label for="membership-level">Membership-level:</label>
                 <select name="membership-level" title="Membership Level">
-                    <option value="none">None</option>
-                    <option value="np">NP Membership(No fee)</option>
-                    <option value="bronze">Bronze Membership</option>
-                    <option value="silver">Silver Membership</option>
-                    <option value="gold">Gold Membership</option>
+                    <option value= "None" disabled selected>Select a membership-level</option>
+                    <option value="Non-Profit Level">NP Membership(No fee) Level</option>
+                    <option value="Bronze Membership Level">Bronze Membership Level</option>
+                    <option value="Silver Membership Level">Silver Membership Level</option>
+                    <option value="Gold Membership Level">Gold Membership Level</option>
                 </select><br>
 
                 <label for="description">Business Description: </label>
@@ -84,9 +87,10 @@
 
             </form>
             
-            <h2>Membership Levels</h2>
+            
 
             <section class="membership-cards">
+                <h2>Membership Levels</h2>
                 <div class="card">
                     <h3>Non-Profit Membership</h3>
                     <button class="openModal">Learn More</button>
