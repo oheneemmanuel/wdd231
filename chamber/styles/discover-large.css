@@ -1,0 +1,78 @@
+@media screen and (min-width: 64rem) {
+     #menu{
+        display: none;
+    }
+    header {
+        display: flex;
+        grid-template-columns: 150px 1fr;
+        align-items: center;
+        position: relative;
+        opacity: 0.8;
+    }
+    .site-name {
+        display: flex;  
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 1rem;
+        text-align: left;
+        margin: 0;
+        
+    }
+    .site-name p {
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    
+    #menu-option , #menu-option.show  {
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+        
+    }
+    #menu-option  {
+        position: absolute;
+        top: 2.5rem;
+        right: 2rem;
+        flex-direction: row;
+        
+    }
+    #menu-option li a {
+        border: 1px solid var(--primary-color);
+        text-decoration: none;
+        display: block;
+        padding: .5rem 2vw;
+        color: white;    
+    }
+    #menu-option li a:hover {
+        background-color: green;
+    }
+    nav {
+        grid-template-rows: 1fr;
+        transition: none;
+    }
+    nav.show {
+        grid-template-rows: 1fr;
+        transition: none;
+        
+    }
+
+    #fun-things {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #fun-things div img {
+        margin: 0;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+
+
+}
