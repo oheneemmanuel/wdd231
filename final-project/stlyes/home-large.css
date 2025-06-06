@@ -48,10 +48,11 @@
         text-decoration: none;
         display: block;
         padding: .5rem 2vw;
-        color: white;    
+            
     }
     #menu-option li a:hover {
         background-color: green;
+        color: white;
     }
     nav {
         grid-template-rows: 1fr;
