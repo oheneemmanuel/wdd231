@@ -139,6 +139,9 @@ nav.show {
 #fun-things div h2 {
     grid-area: name;
     text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+
 }
 #fun-things div img {
     display: block;
@@ -147,15 +150,23 @@ nav.show {
 }
 #fun-things div figure {
     grid-area: image;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    
+
 }
 #fun-things div p {
     text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
     grid-area: description;
-    
+
 }
 #fun-things div address {
     grid-area: address;
     text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
 
 }
 #fun-things div button {
