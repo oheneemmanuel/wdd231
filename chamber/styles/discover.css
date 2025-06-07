@@ -126,7 +126,7 @@ nav.show {
     margin: 1rem 8px;
     background-color: #eee;
     border-radius: 8px;
-    
+    overflow: hidden;
     display: grid;
     grid-template-areas: 
     "name"
@@ -149,12 +149,13 @@ nav.show {
     grid-area: image;
 }
 #fun-things div p {
-    margin: 1rem 10px;
+    text-align: center;
     grid-area: description;
+    
 }
 #fun-things div address {
     grid-area: address;
-    margin: 1rem 10px;
+    text-align: center;
 
 }
 #fun-things div button {

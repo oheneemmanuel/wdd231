@@ -66,6 +66,11 @@
     }
     #fun-things div img {
         margin: 0;
+        
+    }
+    #fun-things div img:hover{
+        filter: contrast(50%);
+        cursor: pointer;
     }
 
     footer {
