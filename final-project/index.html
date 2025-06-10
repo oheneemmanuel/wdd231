@@ -17,9 +17,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="stlyes/home.css">
     <link rel="stylesheet" href="stlyes/home-large.css">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth@0,99.7;1,99.7&display=swap" rel="stylesheet">
     <script type="module" src="scripts/cars.js" defer></script>
 </head>
@@ -38,48 +38,77 @@
     <nav id="animate-me">
         <ul id="menu-option">
             <li><a href="index.html">Home</a></li>
-            <li><a href="directory.html">Directory</a></li>
-            <li class="active-item"><a href="join.html">Join</a></li>
-            <li><a href="#">Discover</a></li>
+            <li><a href="garage.html">Garage</a></li>
+            <li class="active-item"><a href="rent.html">Rent</a></li>
+          
         </ul>
             
     </nav>
   
     <main>
-        <h1>Ride Smart Car Rentals</h1>
+        
         <div class="hero">
-            <picture>
-                <source srcset="images/hero1.webp" media="(min-width:640px)">
-                <img src="images/hero-small.jpg" alt="">
-            </picture>
-            <div class="hero-text">
-                <p><b>Your Trusted Car Marketplace</b></p>
-                <p>Find Your Next Ride — Fast, Easy, Reliable</p>
-                <p>Browse unbeatable deals from trusted sellers in Sunyani and beyond</p>
+           
+            <div class="hero-text-small-screen">
+                <p><b>GO ANYWHERE, ANYTIME</b></p>
+                <p>Your Ride, Your Schedule</p>
+                <p>BOOK IN SECONDS</p>
                 
-                <a href="join.html">Get Your Ride!</a>
+            </div>
+            <div class="hero-text-large-screen">
+                <p><b>FREEDOM TO GO PLACES</b></p>
+                <p>Find Your Next Ride — Fast, Easy, Reliable</p>
+                <p id="text">
+                    RENT A CAR 
+                    <span>IN A FEW CLICKS</span>
+
+                </p>
+    
+                
+            
             </div>
         </div>
+        <div id="name"><p><b>RiDe🚘SmaRt</b></p></div>
+        <div class="items">
+            
+            <a id="gara" href="garage.html">VIEW CARS</a>
+            <a id="car-house" href="rent.html">BOOK NOW</a>
+        </div>
         <section class="container">
-            <div class="Benefits">
-                <h2>Why Choose Us?</h2>
-                <ul>
-                    <li>✅ Affordable daily rates</li>
-                    <li>✅ Well-maintained fleet</li>
-                    <li>✅ Air Conditioning: Yes</li>
-                    <li>✅ Fuel: Petrol</li>
-                    <li>✅ 24/7 customer support</li>
-                </ul>
-                
+          
+            <div class="service">
+                <h2>What We Do</h2>
+                <div class="service-card">
+                    <div>
+                        <img src="images/Chauffeur-Driving-Services.jpg" alt="driving service">
+                        <p><b>Chauffeur Services</b></p>
+                        <p>Experienced, courteous drivers for your everyday and executive travel needs</p>
+                    </div>
+                    <div>
+                        <img src="images/discovery.webp" alt="tour and travel driving service">
+                        <p><b>Tour & Travel</b></p>
+                        <p>Discover new places with our reliable and knowledgeable local drivers.</p>
+                        
+                    </div>
+                    <div>
+                        <img src="images/Wedding.jpg" alt="wedding cars">
+                        <p><b>Wedding Cars </b></p>
+                        <p>Arrive in style with our luxurious, beautifully decorated wedding vehicles.</p>
+               
+                    </div>
+                    
+                </div>
+              
+               
             </div>
         </section>
         <section class="showcase">
-            <h1 id="cd" >🚘 Featured Cars</h1>
+            <h2 id="cd" >🚘 Featured Cars</h2>
             <div class="slider">
                 <img src="images/jetta.webp" alt="jetta" class="slider-image active">
                 <img src="images/discovery.webp" alt="discovery" class="slider-image">
                 <img src="images/charger.webp" alt="charger" class="slider-image">
-                <img src="images/camry.webp" alt="camry" class="slider-image">
+                <img src="images/car1.jpg" alt="camry" class="slider-image">
                 <img src="images/Altima.webp" alt="ghibli" class="slider-image">
                 <img src="images/A4.webp" alt="A4" class="slider-image">
                 <img src="images/AUDI.webp" alt="Audi" class="slider-image">
@@ -92,6 +121,22 @@
                 
             </div>
         </section>
+
+        <section class="choose-us">
+            <h2>WHY CHOOSE US</h2>
+            <img src="images/choose.jpg" alt="smiling father with daugter">
+            <p>We go the extra mile to make your journey smooth, safe, and memorable. With a fleet of modern vehicles, professional drivers, and 24/7 customer support, we are committed to delivering a first-class travel experience you can rely on.</p>
+            <ul class="choose-list">
+                <li><i class="fas fa-clock"></i>Reliable & punctual service</li>
+                <li><i class="fas fa-user-tie"></i>Professionally trained drivers</li>
+                <li><i class="fas fa-car-side"></i> Clean and comfortable vehicles</li>
+                <li><i class="fas fa-dollar-sign"></i>Transparent pricing with no hidden fees</li>
+                <li><i class="fas fa-headset"></i>24/7 availability and easy booking</li>
+            </ul>
+
+        </section>
+
+       
             
 
         
@@ -136,6 +181,36 @@
             </table>
             
         </section>
+
+        <h2>Visit Place Around Ghana  With Ride Smart</h2>
+        <h3>Explore These Places</h3>
+        <section class="visit">
+            <div id="monkey">
+                
+                <img src="images/monkey.webp" alt="monkey sactury">
+                <h3>The Monkey Sanctuary</h3>
+                <p>Step into the lush forests of Ghana and experience the playful energy of friendly monkeys in their natural habitat. A must-visit for nature lovers and adventure seekers!</p>
+                <a href="rent.html">BOOK A TRIP</a>
+            </div>
+
+            <div id="kintampo">
+                <img src="images/kintampo-Waterfalls.webp" alt="Kintampo water falls">
+                <h3>Kintampo Waterfalls</h3>
+                <p>Marvel at the breathtaking cascades of Kintampo Waterfalls, where the soothing rush of water and serene surroundings create the perfect escape into natures beauty.</p>
+                <a href="rent.html">BOOK A TRIP</a>
+            </div>
+            
+            <div id="airport">
+                <img src="images/Sunyani-Airport.jpg" alt="mole national park">
+                <h3>Sunyani Airport</h3>
+                <p>Experience seamless travel through Sunyani Airport, your gateway to exploring the wonders of Ghana with Ride Smart. Convenient, efficient, and ready to take you anywhere.</p>
+                <a href="rent.html">BOOK A TRIP</a>
+            </div>
+
+            
+
+        </section>
+        
     </main>
 
     <footer>

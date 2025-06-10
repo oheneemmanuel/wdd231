@@ -1,5 +1,6 @@
 @media screen and  (min-width: 640px) {
-     #menu{
+
+    #menu{
         display: none;
     }
     header {
@@ -11,18 +12,23 @@
         
     }
     .site-name {
-        display: flex;  
-        flex-direction: column;
-        justify-content: center;
+     
         align-items: flex-start;
         padding: 1rem;
         text-align: left;
         margin: 0;
+
         
+        
+    }
+    .site-name b {
+        font-size: 1.5em;
+        opacity: 1;
+   
     }
     .site-name p {
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        
+        font-weight: bold;
         
     
         
@@ -62,6 +68,66 @@
         grid-template-rows: 1fr;
         transition: none;
     }
+    .hero {
+        height: 100vh;
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6), 
+            rgba(0, 0, 0, 0.6)
+        ),
+        url("../images/hero.jpg");
+    }
+    
+   
+    .hero-text-small-screen {
+        display: none;
+    }   
+    .hero-text-large-screen {
+        display: block;
+        position: absolute;
+        top: 8rem;
+        right: 2rem;
+        left: 2rem;
+        
+    }  
+    .hero-text-large-screen p {
+        text-align: center;
+        font-size: 2rem;
+        color: white;
+    }
+    .hero-text-large-screen b {
+        font-size: 4rem;
+        font-style: italic;
+        font-family: var(--text-style);
+        color: white;
+
+    }
+    #text {
+        color: white;
+    } 
+    #text span {
+        color: var(--accent-color);
+    }
+    #name p b {
+        color: white;
+        font-size: 3rem;
+    }
+    #gara {
+        margin-right: 5rem;
+    }
+    #car-house {
+        margin-right: 3rem;
+    }
+
+    .service-card {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .trip-table table {
+        width: 100%;
+    
+    
+    
+    }
+   
     .slider {
         position: relative;
         max-width: 800px;
@@ -71,5 +137,30 @@
         box-shadow: 0 0 10px rgba(0,0,0,0.2);
         
     }
+    .choose-us img {
+        float: left;
+        width: 50%;
+    }
+    .choose-us p {
+        text-align: center;
+        margin-top: 10rem;
+        margin-right: 3rem;
+    }
+    .choose-list i {
+        margin-right: 2rem;
+        
+    }
+    .visit {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    footer {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+
 
 }
