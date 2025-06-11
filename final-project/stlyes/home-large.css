@@ -105,11 +105,18 @@
         color: white;
     } 
     #text span {
-        color: var(--accent-color);
+        color: rgb(147, 240, 15);
+    }
+    .items {
+        top: 37%;
+    }
+    #name {
+        top: 37%;
     }
     #name p b {
         color: white;
         font-size: 3rem;
+        
     }
     #gara {
         margin-right: 5rem;
