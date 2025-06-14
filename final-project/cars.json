@@ -3,7 +3,7 @@
     {
       "name": "Mustang",
       "make": "Ford",
-      "image": "./images/3series.webp",
+      "image": "./images/mustang.webp",
       "year": 2023,
       "type": "Coupe",
       "color": "Red",
@@ -51,7 +51,7 @@
     {
       "name": "Model S",
       "make": "Tesla",
-      "image": "https://example.com/images/models.jpg",
+      "image": "./images/telsa.webp",
       "year": 2024,
       "type": "Sedan",
       "color": "Black",
@@ -131,7 +131,7 @@
     {
       "name": "CX-5",
       "make": "Mazda",
-      "image": "https://example.com/images/cx5.webp",
+      "image": "./images/cx5.webp",
       "year": 2023,
       "type": "SUV",
       "color": "Red",
@@ -195,7 +195,7 @@
     {
       "name": "XJ",
       "make": "Jaguar",
-      "image": "https://example.com/images/xj.jpg",
+      "image": "./images/xj.webp",
       "year": 2021,
       "type": "Luxury Sedan",
       "color": "Black",
@@ -243,7 +243,7 @@
     {
       "name": "Panamera",
       "make": "Porsche",
-      "image": "https://example.com/images/panamera.jpg",
+      "image": "./images/panamera.webp",
       "year": 2023,
       "type": "Sedan",
       "color": "Silver",
@@ -275,7 +275,7 @@
     {
       "name": "TLX",
       "make": "Acura",
-      "image": "https://example.com/images/tlx.jpg",
+      "image": "./images/tlx.webp",
       "year": 2023,
       "type": "Sedan",
       "color": "Blue",
@@ -287,6 +287,72 @@
       "features": ["AWD", "Touchscreen Display", "Adaptive Cruise"],
       "rating": 4.5,
       "availability": "In Stock"
+    },
+    {
+      "name": "F-150",
+      "make": "Ford",
+      "image": "./images/f150.webp",
+      "year": 2023,
+      "type": "Pickup Truck",
+      "color": "Blue",
+      "price": 42000,
+      "engine": "3.5L V6 EcoBoost",
+      "transmission": "Automatic",
+      "fuelType": "Gasoline",
+      "mileage": "20 MPG",
+      "features": ["Towing Package", "4WD", "Apple CarPlay"],
+      "rating": 4.7,
+      "availability": "In Stock"
+    },
+    {
+      "name": "Odyssey",
+      "make": "Honda",
+      "image": "./images/odyssey.webp",
+      "year": 2023,
+      "type": "Van",
+      "color": "Silver",
+      "price": 36000,
+      "engine": "3.5L V6",
+      "transmission": "Automatic",
+      "fuelType": "Gasoline",
+      "mileage": "22 MPG",
+      "features": ["Rear Entertainment", "Magic Slide Seats", "Blind Spot Monitoring"],
+      "rating": 4.6,
+      "availability": "In Stock"
+    },
+    {
+      "name": "Silverado",
+      "make": "Chevrolet",
+      "image": "./images/silverado.webp",
+      "year": 2023,
+      "type": "Pickup Truck",
+      "color": "Black",
+      "price": 45000,
+      "engine": "5.3L V8",
+      "transmission": "Automatic",
+      "fuelType": "Gasoline",
+      "mileage": "17 MPG",
+      "features": ["Trailering Package", "Apple CarPlay", "Backup Camera"],
+      "rating": 4.5,
+      "availability": "In Stock"
+    },
+    {
+      "name": "Pacifica",
+      "make": "Chrysler",
+      "image": "./images/pacifica.webp",
+      "year": 2023,
+      "type": "Van",
+      "color": "White",
+      "price": 38000,
+      "engine": "3.6L V6",
+      "transmission": "Automatic",
+      "fuelType": "Hybrid",
+      "mileage": "82 MPGe",
+      "features": ["Stow 'n Go Seating", "Uconnect Touchscreen", "Rear Parking Sensors"],
+      "rating": 4.6,
+      "availability": "In Stock"
     }
+
+
   ]
 }

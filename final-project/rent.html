@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride Smart Rentals - Sunyani, Rent Page</title>
+    <meta name="description" content="A rent page that allow user to fill in their details for it to be sent">
+    <meta name="author" content="Ohene Emmanuel Kwakye">
+    <meta property="og:title" content="chamber of commerce">
+    <meta property="og:description" content="A rent page that will enable users to fill in their infomation fo it to be easy to track them.">
+    <meta property="og:image" content="https://oheneemmanuel.github.io/wdd231/final-project/images/charger.webp">
+    <meta property="og:url" content="https://oheneemmanuel.github.io/wdd231/final-project/rent.html">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Chamber of Commerce">
+    <meta property="og:locale" content="en_US">
+    <link rel="icon" href="icon1.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles/rent.css">
+    <link rel="stylesheet" href="styles/rent-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wdth@0,99.7;1,99.7&display=swap" rel="stylesheet">
+    
+
+</head>
+<body>
+    <header>
+        <img src="images/charger.webp" alt="A logo of the site" width="120" height="120">
+        <div class="site-name">
+            
+            <p>
+                <b>Ride Smart</b>
+            </p>
+            <p>Car Rentals</p>
+        </div>
+      
+        <button id="menu"></button>
+   </header>
+   
+    <nav id="animate-me">
+        <ul id="menu-option">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="garage.html">Garage</a></li>
+            <li class="active-item"><a href="rent.html">Rent</a></li>
+          
+        </ul>
+            
+    </nav>
+
+    <main>
+        <section class="form-member">
+            
+            <form method="get" action="thankyou.html">
+            
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" title="Enter your first name" autocomplete="given-name" required>
+
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" title="Enter your last name" autocomplete="given-name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" title="Applicant's-Email" required autocapitalize="off" placeholder="example@gmail.com"><br>
+
+                <label for="phone">Mobile Phone No: </label>
+                <input type="tel" id="phone" name="tel" title="Mobile Phone number" required autocomplete="tel"><br>
+
+                <label for="age">Your Age:</label>
+                <input type="number" id="age" name="age" min="18" required>
+
+                <label for="pickup-date">Pick-up Date:</label>
+                <input type="date" id="pickup-date" name="pickup-date" required>
+
+                <label for="pickup-time">Pick-up Time:</label>
+                <input type="time" id="pickup-time" name="pickup-time" required>
+                <label for="pickup-location">Pick-up Location:</label>
+
+                <input type="text" id="pickup-location" name="pickup-location" required>
+
+                <label for="car-type">Preferred Car Type:</label>
+                <select id="car-type" name="car-type" required>
+
+                    <option value="">-- Please choose an option --</option>
+                    <option value="sedan">Sedan</option>
+                    <option value="suv">SUV</option>
+                    <option value="pickup">Pickup Truck</option>
+                    <option value="van">Van</option>
+                </select>
+
+
+
+
+                <input type="hidden" name="timestamp" id="timestamp">
+                <input type="submit" value="BOOK NOW !">
+
+            </form>
+       
+        
+
+    </main>
+
+    <footer>
+        <div>
+            <p>
+                <b>Sunyani Chamber of Commerce</b>
+            </p>
+            <p>Bono East Penkwasi</p>
+            <p>penkwasi, Sunyani, p/y 24 </p>
+            <p>ohenekwakye24@gmail.com</p>
+            <p>+233 544 20 4625</p>
+
+        </div>
+        <div>
+            
+            <a href="https://www.facebook.com/"><img src="images/facebook-icon.png" alt="Facebook" width="30" height="30"></a>
+            <a href="https://twitter.com/"><img src="images/twitter-icon.png" alt="Twitter" width="30" height="30"></a>
+            <a href="https://www.instagram.com/"><img src="images/istagram-icon.png" alt="instagram-icon.png" width="30" height="30"></a>
+        </div>
+        <div>
+            <p>WDD231 class Project</p>
+            <p>Ohene Kwakye Emmanuel</p>
+        
+            <p>&copy;<span id="currentyear"></span> Ohene Emmanuel Kwakye, Ghana All rights reserved.</p>
+            <p id="LastModified"></p>
+        </div>
+    </footer>
+        
+    
+</body>
+</html>

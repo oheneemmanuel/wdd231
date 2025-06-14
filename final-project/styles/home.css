@@ -167,7 +167,7 @@ nav.show {
     padding: .2rem;
     border: 1px outset black;
     border-radius: 5px;
-    background-color: tomato;
+    background-color: red;
     font-weight: bold;
     font-family: var(--text-style);
 }
@@ -284,6 +284,8 @@ a.explore-button {
     width: 100%;
     border-collapse: collapse;
     overflow-x: auto;
+    place-items: center;
+    text-align: center;
     
 }
 .trip-table th, .trip-table td {
@@ -309,14 +311,16 @@ h3 {
     grid-template-columns: 1fr;
     gap: 1rem;
     transition: transform 0.3s ease;
+    place-items: center;
+    text-align: center;
+    justify-content: center;
 }
 .visit img {
     height: 200px;
     object-fit: cover;
     display: block;
     margin-top: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+   
 
 }
 
@@ -332,6 +336,7 @@ h3 {
     background-color: var(--background-color);
     border-radius: 1rem;
     width: 100%;
+    place-items: center;
   
 }
 .visit div:hover {
