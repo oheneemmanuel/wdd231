@@ -1,3 +1,4 @@
+*{box-sizing: border-box;}
 :root {
     --primary-color: #002b5b;
     --secondary-color: #6c757d;
@@ -8,6 +9,7 @@
     --highlight-color: #d4af37;
     --link-hover-color: #0056b3;
 }
+
 
 html, body {
     margin: 0;
@@ -52,15 +54,9 @@ header img {
     font-size: 1rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 5rem;
-    opacity: 1;
 }
 .site-name b {
     font-size: 1.5em;
-    opacity: 1;
-   
-}
-.site-name p {
-    margin-left: 4rem;
 }
 #menu {
     font-size: 2rem;
@@ -78,8 +74,10 @@ header img {
     text-decoration: none;
     display: block;
     padding: .5rem 2vw;
-    color: var(--text-color);
-    background-color:  var(--background-color); 
+    
+    color: white;
+
+     
 }
 #menu-option li a:hover {
     background-color: var(--accent-color);
@@ -89,19 +87,14 @@ header img {
     list-style: none;
 }
 li.active-item a {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: var(--highlight-color);
 
 }
-
-
-
-
 nav {
     display: grid;
     grid-template-rows: 0fr;
     transition: grid-template-rows 0.5s ease-out;
     background-color: var(--primary-color);
-    
 }
 nav ul {
     overflow: hidden;
@@ -113,20 +106,27 @@ nav ul {
 nav.show {
     grid-template-rows: 1fr;
     justify-content: center;
-    margin-top: 0;    
+    margin-top: 0;
+    
+
+    
+    
 }
-.hero  {
-    background-image: url("../images/hero-small.jpg");
-    height: 100vh;
-    position: relative;
-    background-size: cover;
-    background-position: center;
+
+.hero {
+    
+    height: 70vh;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.6), 
+        rgba(0, 0, 0, 0.6)
+    ),
+    url("../images/hero-small.jpg");
 }
 
 
 .items {
     position: absolute;
-    top: 55%;
+    top: 60%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -137,6 +137,7 @@ nav.show {
     display: flex;
     position: absolute;
     top: 55%;
+    color: white;
     justify-content: flex-start;
     
 }
@@ -162,12 +163,12 @@ nav.show {
     transform: scale(1.2);
 }
 #car-house {
-    color: white;
+    color: var(--text-color);
     text-decoration: none;
     padding: .2rem;
     border: 1px outset black;
     border-radius: 5px;
-    background-color: red;
+    background-color: var(--background-color);
     font-weight: bold;
     font-family: var(--text-style);
 }
@@ -205,16 +206,12 @@ nav.show {
 
 .hero-text-small-screen {
     position: absolute;
-    top: 60%;
-    left: 40%;
-    
-    
-    color: var(--text-color);
-    
-    text-align: center;
+    top: 75%;
+    left: 30%;
+    color: white;
     z-index: 1;
-    width: 80%;
-    max-width: 200px;
+    width: 100%;
+    max-width: 300px;
     padding: 0;
     height: auto;
 }

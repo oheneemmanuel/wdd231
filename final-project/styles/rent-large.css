@@ -9,7 +9,8 @@
             opacity: 1;
         }
     }
-    #menu{
+
+     #menu{
         display: none;
     }
     header {
@@ -21,18 +22,23 @@
         
     }
     .site-name {
-        display: flex;  
-        flex-direction: column;
-        justify-content: center;
+     
         align-items: flex-start;
         padding: 1rem;
         text-align: left;
         margin: 0;
+
         
+        
+    }
+    .site-name b {
+        font-size: 1.5em;
+        opacity: 1;
+   
     }
     .site-name p {
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        
+        font-weight: bold;
         
     
         
@@ -58,11 +64,11 @@
         text-decoration: none;
         display: block;
         padding: .5rem 2vw;
-        color: white;    
-        background-color: var(--primary-color);
+            
     }
     #menu-option li a:hover {
         background-color: green;
+        color: white;
     }
     nav {
         grid-template-rows: 1fr;
@@ -72,8 +78,6 @@
         grid-template-rows: 1fr;
         transition: none;
     }
-    
-
     
     
         

@@ -71,15 +71,22 @@
         grid-template-rows: 1fr;
         transition: none;
     }
-    #car-container {
-        grid-template-columns: 1fr 1fr 1fr;
-        animation: slideIn 1.5s ease-in-out forwards;
-    }
-    #box h3 {
-        text-align: center;
-    }
-   
+    .about-values ul li {
 
+        text-align: center;
+        width: 70%;
+        animation: slideIn 2s ease-in-out forwards;
+    }
+    .about-values ul li:hover {
+        background-color: var(--primary-color);
+        cursor: pointer;
+    }
+    .about-team {
+        
+        grid-template-columns: 1fr 1fr 1fr;
+
+       
+    }
     footer {
         display: flex;
         flex-direction: row;
@@ -88,12 +95,6 @@
         align-items: center;
         padding: 1rem;
     }
-
-    
-   
-   
-    
-
 
     
 }
