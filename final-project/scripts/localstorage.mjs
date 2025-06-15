@@ -7,16 +7,16 @@ export function showVisitMessage() {
     let message = '';
 
     if(!lastVisit) {
-        message = 'Welcome! Let us know if you have anything'
+        message = 'Welcome! This is your first book!';
     } else {
         const diffMs = now - parseInt(lastVisit, 10);
         const diffDays = Math.floor(diffMs / (1000 * 60 * 60 * 24));
 
         if (diffDays < 1) {
-            message = "Back so soon! Awesome!";
+            message = "This is Awesome!";
 
         } else {
-            message = `You last visited ${diffDays} days ago`;
+            message = `You last booked ${diffDays} days ago`;
         }
     }
 

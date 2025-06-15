@@ -75,6 +75,9 @@
             rgba(0, 0, 0, 0.6)
         ),
         url("../images/hero.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
     
    
@@ -84,7 +87,7 @@
     .hero-text-large-screen {
         display: block;
         position: absolute;
-        top: 10rem;
+        top: 25rem;
         right: 2rem;
         left: 2rem;
         

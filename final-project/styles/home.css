@@ -1,4 +1,3 @@
-*{box-sizing: border-box;}
 :root {
     --primary-color: #002b5b;
     --secondary-color: #6c757d;
@@ -9,7 +8,6 @@
     --highlight-color: #d4af37;
     --link-hover-color: #0056b3;
 }
-
 
 html, body {
     margin: 0;
@@ -54,9 +52,15 @@ header img {
     font-size: 1rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-left: 5rem;
+    opacity: 1;
 }
 .site-name b {
     font-size: 1.5em;
+    opacity: 1;
+   
+}
+.site-name p {
+    margin-left: 4rem;
 }
 #menu {
     font-size: 2rem;
@@ -74,10 +78,8 @@ header img {
     text-decoration: none;
     display: block;
     padding: .5rem 2vw;
-    
     color: white;
-
-     
+    
 }
 #menu-option li a:hover {
     background-color: var(--accent-color);
@@ -87,14 +89,19 @@ header img {
     list-style: none;
 }
 li.active-item a {
-    background-color: var(--highlight-color);
+    background-color: rgba(0, 0, 0, 0.5);
 
 }
+
+
+
+
 nav {
     display: grid;
     grid-template-rows: 0fr;
     transition: grid-template-rows 0.5s ease-out;
     background-color: var(--primary-color);
+    
 }
 nav ul {
     overflow: hidden;
@@ -106,11 +113,7 @@ nav ul {
 nav.show {
     grid-template-rows: 1fr;
     justify-content: center;
-    margin-top: 0;
-    
-
-    
-    
+    margin-top: 0;    
 }
 
 .hero {
@@ -121,22 +124,26 @@ nav.show {
         rgba(0, 0, 0, 0.6)
     ),
     url("../images/hero-small.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
 .items {
     position: absolute;
-    top: 60%;
+    top: 67%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    right: 1rem;
+    right: 10rem;
     text-align: center;
 }
 #name {
     display: flex;
     position: absolute;
-    top: 55%;
+    top: 53%;
+    left: 7rem;
     color: white;
     justify-content: flex-start;
     
@@ -153,7 +160,7 @@ nav.show {
     border: 1px outset black;
     border-radius: 5px;
     background-color: rgb(243, 236, 24);
-    margin-right: 1rem;
+    margin-right: 4rem;
     font-family: var(--text-style);
     font-weight: bold;
     transition: transform(0.3s ease);
@@ -171,6 +178,7 @@ nav.show {
     background-color: var(--background-color);
     font-weight: bold;
     font-family: var(--text-style);
+    margin-left: 1rem;
 }
 #car-house:hover {
     transform: scale(1.2);
@@ -227,7 +235,6 @@ nav.show {
     height: auto;
     margin: 1rem 0;
     border-radius: 10px;
-       
 }
 
 .choose-list i {
@@ -280,7 +287,6 @@ a.explore-button {
 .trip-table table {
     width: 100%;
     border-collapse: collapse;
-    overflow-x: auto;
     place-items: center;
     text-align: center;
     
@@ -341,7 +347,7 @@ h3 {
     
 }
 .visit div a {
-    margin-bottom: 3rem;
+    margin: 1rem;
     color: white;
     text-decoration: none;
     margin-left: 1rem;
@@ -349,6 +355,7 @@ h3 {
     background-color: navy;
     
     margin-bottom: 1rem;
+
 }
 
 footer {
