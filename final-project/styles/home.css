@@ -1,3 +1,4 @@
+*{box-sizing: border-box;}
 :root {
     --primary-color: #002b5b;
     --secondary-color: #6c757d;
@@ -140,7 +141,7 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    right: 10rem;
+    right: 6rem;
     text-align: center;
 }
 #name {
@@ -165,7 +166,7 @@ h1 {
     border: 1px outset black;
     border-radius: 5px;
     background-color: rgb(243, 236, 24);
-    margin-right: 2rem;
+    margin-right: .5rem;
     font-family: var(--text-style);
     font-weight: bold;
     transform: scale(1.2);
