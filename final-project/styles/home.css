@@ -168,7 +168,7 @@ h1 {
     margin-right: 2rem;
     font-family: var(--text-style);
     font-weight: bold;
-    transition: transform(0.3s ease);
+    transform: scale(1.2);
     
 }
 #gara:hover {
