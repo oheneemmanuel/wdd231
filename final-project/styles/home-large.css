@@ -160,8 +160,12 @@
         margin-right: 2rem;
         
     }
+
     .visit {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    .trip-table th, .trip-table td {
+        font-size: 1.1rem;
     }
     footer {
         display: flex;

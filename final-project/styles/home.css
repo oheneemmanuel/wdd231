@@ -133,6 +133,9 @@ nav.show {
 h1 {
     text-align: center;
 }
+.hero, .visit div, .trip-table table {
+    max-width: 100%;
+}
 
 
 .items {
@@ -291,28 +294,41 @@ a.explore-button {
     margin-top: 2rem;
     display: block;
     width: 100%;
+    overflow-x: auto;
+    box-sizing: border-box;
 }
 .trip-table table {
-
+    width: 100%;
     border-collapse: collapse;
-    place-items: center;
-    text-align: center;
+    min-width: 500px;
     
 }
 .trip-table th, .trip-table td {
-    padding: 1rem;
+    padding: .075rem;
     margin: 0;
     border: 1px solid #999;
     background-color: navy;
     color: white;
+    text-align: center;
     
 }
 .trip-table table td {
     background-color: var(--background-color);
     color: var(--text-color);
     font-family: var(--text-style);
-    width: 100%;
+ 
     
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.service {
+    padding: 2rem 1rem;
+    background-color: #fff;
+    border-radius: 10px;
 }
 h3 {
     text-align: center;
