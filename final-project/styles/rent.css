@@ -105,6 +105,9 @@ nav.show {
     justify-content: center;
     margin-top: 0;    
 }
+h1 {
+    text-align: center;
+}
 form {
     margin-bottom: 2rem;
     padding: 1rem;

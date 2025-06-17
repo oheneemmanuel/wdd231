@@ -109,6 +109,9 @@ nav ul {
     margin: 0;
     
 }
+h1 {
+    text-align: center;
+}
 
 nav.show {
     grid-template-rows: 1fr;

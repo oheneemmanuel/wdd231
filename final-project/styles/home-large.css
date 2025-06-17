@@ -87,7 +87,7 @@
     .hero-text-large-screen {
         display: block;
         position: absolute;
-        top: 25rem;
+        top: 30rem;
         right: 2rem;
         left: 2rem;
         
@@ -111,10 +111,10 @@
         color: rgb(147, 240, 15);
     }
     .items {
-        top: 37%;
+        top: 45%;
     }
     #name {
-        top: 37%;
+        top: 40%;
     }
     #name p b {
         color: white;
