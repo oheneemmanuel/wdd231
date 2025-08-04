@@ -1,0 +1,53 @@
+@media screen and (min-width: 700px) {
+
+    #menu {
+        display: none;
+    }
+    
+     
+    #menu-option , #menu-option.show  {
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+        
+        
+    }
+    #menu-option  {
+    
+        position: absolute;
+        
+        right: 2rem;
+        
+        
+    }
+    #menu-option li a {
+        border: 1px solid var(--primary-color);
+        text-decoration: none;
+        display: flex;
+        padding: .5rem 2vw;
+        background-color: blue;
+        flex-direction: row;
+            
+    }
+    #menu-option li a:hover {
+        background-color: green;
+        color: white;
+    }
+    nav {
+        display: flex;
+        transition: none;
+        overflow: visible;
+    
+
+    }
+    nav.show {
+        display: flex;
+        transition: none;
+        overflow: visible;
+    }
+
+
+    
+  
+
+}

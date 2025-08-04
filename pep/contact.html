@@ -3,98 +3,70 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Remmadent | Home Page</title>
-  <meta name="description" content="Homepage for Remmadent toothpaste  bright smiles, bold confidence." />
+  <title>Contact Us | Remmadent</title>
+  <meta name="description" content="Contact Remmadent for inquiries, feedback, or support." />
   <meta name="author" content="Ohene Emmanuel Kwakye" />
   <meta name="theme-color" content="#2BB673" />
-  
+
   <!-- Fonts and Icons -->
   <link rel="preload" href="fonts/Roboto.woff2" as="font" type="font/woff2" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-  
-  <!-- Animation On Scroll -->
+
+  <!-- AOS Animation -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <!-- Styles -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
   <link rel="stylesheet" href="styles/pep.css" />
   <link rel="stylesheet" href="styles/pep-large.css" />
-
-  <!-- Scripts -->
   <script type="module" src="scripts/pep.js" defer></script>
   <script>
     document.addEventListener("DOMContentLoaded", () => AOS.init());
   </script>
 </head>
 <body>
-  <header>
-    <img src="images/pep1.jpg" alt="Happy smiling person" class="slider-image active" />
-    <img src="images/smile1.jpeg" alt="Smiling model with Remmadent" class="slider-image" />
-    <img src="images/pep2.jpg" alt="Toothpaste and toothbrush" class="slider-image" />
-    <img src="images/pep3.jpg" alt="Family brushing teeth" class="slider-image" />
-    <img src="images/pep4.jpg" alt="Confident smile close-up" class="slider-image" />
-    
+  <header class="about-hero">
     <div class="hero-overlay">
-      <h2>Bright Smiles. Bold Confidence.</h2>
-      <p>Remmadent — Your daily dose of freshness.</p>
+      <h1>Contact Remmadent</h1>
+      <p>We’re here to help — get in touch today!</p>
     </div>
-    
     <button id="menu" aria-label="Open menu"></button>
   </header>
 
   <nav id="animate-me">
     <ul id="menu-option">
-      <li class="active-item"><a href="index.html">Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li class="active-item"><a href="contact.html">Contact</a></li>
     </ul>
   </nav>
 
   <main>
-    <h1>REMMADENT</h1>
-
-    <section class="features" data-aos="fade-up">
-      <h2>Why Choose Remmadent?</h2>
-      <ul>
-        <li>✅ Advanced Whitening Formula</li>
-        <li>✅ Long-Lasting Freshness</li>
-        <li>✅ Strengthens Enamel</li>
-        <li>✅ Fights Cavities and Plaque</li>
-      </ul>
-    </section>
-
-    <section class="products" data-aos="fade-up">
-      <h2>Our Products</h2>
-      <div class="product-card">
-        <img src="images/pep4.webp" alt="Remmadent Classic Tube" />
-        <h3>Remmadent Classic</h3>
-        <p>Whitening + Fresh Mint — 100ml</p>
-        <button>Buy Now</button>
-      </div>
-    </section>
-
-    <section class="testimonials" data-aos="fade-up">
-      <h2>Happy Smiles Everywhere</h2>
-      <blockquote>"Best toothpaste I've used. My teeth have never been whiter!" – Anita</blockquote>
-      <blockquote>"Fresh breath all day. I love Remmadent!" – Kwesi</blockquote>
-    </section>
-
     <section class="contact-form" data-aos="fade-up">
-      <h2>Get in Touch</h2>
+      <h2>Send Us a Message</h2>
       <form action="#" method="get">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" required />
-        
+
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required />
-        
+
+        <label for="subject">Subject:</label>
+        <input type="text" id="subject" name="subject" required />
+
         <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
-        
+        <textarea id="message" name="message" rows="5" required></textarea>
+
         <button type="submit">Send Message</button>
       </form>
+    </section>
+
+    <section data-aos="fade-up">
+      <h2>Our Contact Information</h2>
+      <p><strong>Address:</strong> Penkwasi, Sunyani, Bono Region, Ghana</p>
+      <p><strong>Email:</strong> <a href="mailto:ohenekwakye24@gmail.com">ohenekwakye24@gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+233544204625">+233 544 20 4625</a></p>
     </section>
   </main>
 

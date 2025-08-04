@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Remmadent</title>
+  <meta name="description" content="Learn more about Remmadent Toothpaste and our mission to bring you brighter smiles." />
+  <meta name="author" content="Ohene Emmanuel Kwakye" />
+  <meta name="theme-color" content="#2BB673" />
+
+  <!-- Fonts and Icons -->
+  <link rel="preload" href="fonts/Roboto.woff2" as="font" type="font/woff2" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+  <!-- AOS Animation -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles/about.css" />
+  <link rel="stylesheet" href="styles/pep-large.css" />
+  <script type="module" src="scripts/pep.js" defer></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => AOS.init());
+  </script>
+</head>
+<body>
+  <header class="about-hero">
+    <div class="hero-overlay">
+      <h1>About Remmadent</h1>
+      <p>Bright Smiles Start Here.</p>
+    </div>
+    <button id="menu" aria-label="Open menu"></button>
+  </header>
+
+  <nav id="animate-me">
+    <ul id="menu-option">
+      <li><a href="index.html">Home</a></li>
+      <li class="active-item"><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section data-aos="fade-up">
+      <h2>Who We Are</h2>
+      <p>At <strong>Remmadent</strong>, we believe that a radiant smile is the key to confidence and health. Founded with a vision to redefine oral care, we are committed to creating toothpaste products that combine science, nature, and innovation.</p>
+    </section>
+
+    <section data-aos="fade-up">
+      <h2>Our Mission</h2>
+      <p>Our mission is to deliver superior dental care for every household. We aim to make oral hygiene simple, effective, and accessible to everyone — with no compromises on taste, performance, or quality.</p>
+    </section>
+
+    <section data-aos="fade-up">
+      <h2>What Makes Us Different</h2>
+      <ul>
+        <li>🌿 Naturally-inspired ingredients</li>
+        <li>🦷 Dentist-approved formulas</li>
+        <li>🌍 Eco-friendly packaging</li>
+        <li>😊 Trusted by families nationwide</li>
+      </ul>
+    </section>
+
+    <section data-aos="fade-up">
+      <h2>Our Team</h2>
+      <p>Behind every tube of Remmadent is a passionate team of professionals — scientists, health experts, and designers — all working together to ensure your smile gets the care it deserves.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div>
+      <p><b>Remmadent Toothpaste Company</b></p>
+      <p>Penkwasi, Sunyani, Bono Region</p>
+      <p>Email: ohenekwakye24@gmail.com</p>
+      <p>Phone: +233 544 20 4625</p>
+    </div>
+
+    <div class="socials">
+      <a href="https://www.facebook.com/"><img src="images/facebook-icon.png" alt="Facebook" width="30" height="30" /></a>
+      <a href="https://twitter.com/"><img src="images/twitter-icon.png" alt="Twitter" width="30" height="30" /></a>
+      <a href="https://www.instagram.com/"><img src="images/istagram-icon.png" alt="Instagram" width="30" height="30" /></a>
+    </div>
+
+    <div>
+      <p>WDD231 Class Project</p>
+      <p>Ohene Kwakye Emmanuel</p>
+      <p>&copy; <span id="currentyear"></span> Ohene Emmanuel Kwakye, Ghana. All rights reserved.</p>
+      <p id="LastModified"></p>
+    </div>
+  </footer>
+</body>
+</html>
